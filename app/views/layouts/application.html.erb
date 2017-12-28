@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
-    <title>Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Blog</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,5 +14,7 @@
 
   <body>
     <%= yield %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
