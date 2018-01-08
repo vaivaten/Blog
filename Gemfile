@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'slim'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
+gem 'popper_js', '~> 1.12.9'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
