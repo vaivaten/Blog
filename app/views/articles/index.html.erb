@@ -10,3 +10,4 @@
     Published <%= distance_of_time_in_words(article.created_at, Time.now) %> ago
   </div>
 <% end %>
+<%= paginate @articles %>
