@@ -29,6 +29,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     if @article.save
+      flash[:notice] = 'Article was successfully created.'
       redirect_to @article
     else
       render 'new'
