@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :set_title
+
   def index
     @articles = Article.order("created_at desc").page(params[:page]).per(6)
   end
@@ -47,5 +49,9 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :text)
+  end
+
+  def set_title
+    @page_title = "Blog | Articles"
   end
 end

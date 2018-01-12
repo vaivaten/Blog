@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>My Blog</title>
+    <title><%= @page_title %></title>
 
     <%= csrf_meta_tags %>
 
@@ -18,27 +18,16 @@
     <main role="main" class="container">
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-12 col-md-9">
-          <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>This is an example blog.</p>
-          </div>
+          <%= render "shared/jumbotron" %>
 
           <div class="row">
             <%= yield %>
-          </div><!--/row-->
-        </div><!--/span-->
-        <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
-          <div class="list-group">
-            <%= link_to "Existing Articles", articles_path, class: 'list-group-item active' %>
-            <%= link_to "New Article", new_article_path, class: 'list-group-item' %>
           </div>
-          <%= image_tag("1.jpeg", alt: "Blog", class: "img-rounded", width: "260px")%>
         </div>
-      </div><!--/row-->
+        <%= render "shared/sidebar" %>
+      </div>
     <hr>
-    </main><!--/.container-->
-      <footer>
-        <p>&copy; 2018 | Vaiva </p>
-      </footer>
+    </main>
+      <%= render "shared/footer" %>
   </body>
 </html>
