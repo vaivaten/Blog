@@ -9,6 +9,21 @@
         <%= @article.text %>
       </p>
 
+    <h2>Add a comment:</h2>
+    <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
+      <p>
+        <%= form.label :name %><br>
+        <%= form.text_field :name %>
+      </p>
+      <p>
+        <%= form.label :comment %><br>
+        <%= form.text_area :comment %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+
       <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-primary" %> |
       <%= link_to 'Back', articles_path, class: "btn btn-primary" %>
     </div>
