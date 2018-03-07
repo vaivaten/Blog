@@ -58,3 +58,5 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 1.12.9'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'kaminari'
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
