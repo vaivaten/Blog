@@ -1,4 +1,4 @@
-<%= form_for @article do |f| %>
+<%= form_for @article, :html => {:multipart => true} do |f| %>
 
   <% if @article.errors.any? %>
     <div class="alert alert-danger" role="alert" id="error_explanation">
@@ -25,12 +25,10 @@
   </p>
 
   <p>
+    <%= f.file_field :image %><br>
+  </p>
+
+  <p>
     <%= f.submit "Publish", class: 'btn btn-primary' %>
   </p>
 <% end %>
-
-<!-- <div class="alert alert-success" role="alert">
-  <% if flash[:notice] %>
-     <div class="notice"><%= flash[:notice] %></div>
-   <% end %>
- </div> -->
