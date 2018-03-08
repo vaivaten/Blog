@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :set_title
 
   def index
-    @articles = Article.order("created_at desc").page(params[:page]).per(6)
+    @articles = Article.order("created_at desc").page(params[:page]).per(3)
   end
 
   def show

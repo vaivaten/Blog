@@ -1,10 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-9">
+      <%= image_tag @article.image_url.to_s, class: "img-rounded", width: "260px" %>
+      <hr>
       <h2>
         <%= @article.title %>
       </h2>
-      <%= image_tag @article.image_url.to_s %>
+
       <p>
         <%= @article.text %>
       </p>

@@ -60,3 +60,7 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'kaminari'
 gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
+gem 'dotenv-rails', groups: [:development, :test]
+gem "fog-google"
+gem "google-api-client", "> 0.8.5", "< 0.9"
+gem "mime-types"
