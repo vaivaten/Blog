@@ -64,3 +64,4 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem "fog-google"
 gem "google-api-client", "> 0.8.5", "< 0.9"
 gem "mime-types"
+gem 'gcloud_storage'
