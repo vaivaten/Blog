@@ -197,7 +197,8 @@ GEM
     os (0.9.6)
     popper_js (1.12.9)
     public_suffix (4.0.3)
-    puma (3.12.4)
+    puma (4.3.8)
+      nio4r (~> 2.0)
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -318,7 +319,7 @@ DEPENDENCIES
   mime-types
   mini_magick
   popper_js (~> 1.12.9)
-  puma (~> 3.7)
+  puma (~> 4.3)
   rails (~> 5.1.4)
   react-rails
   sass-rails (~> 5.0)
